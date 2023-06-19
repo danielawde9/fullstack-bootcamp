@@ -16,9 +16,8 @@ Before you begin, make sure you have the following software installed on your ma
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/danielawde9/fullstack-bootcamp.git
    ```
-
 
 ## Additional Resources
 
@@ -30,6 +29,5 @@ Here are some additional resources to help you learn more about the technologies
 - [MySQL Documentation](https://dev.mysql.com/doc)
 
 ## License
-
 
 This project is licensed under the [MIT License](LICENSE).
