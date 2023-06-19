@@ -1,2 +1,2 @@
-var buf = Buffer.from('Nodejsera for nodejs');
-console.log( buf.toString('ascii')); 
+var buf = Buffer.from(" for nodejs");
+console.log(buf.toString("ascii"));

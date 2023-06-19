@@ -22,7 +22,7 @@
     "day",
     "28"
   ],
-  "author": "@nodejsera , @rajatgarian",
+  "author": "@ , @rajatgarian",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
