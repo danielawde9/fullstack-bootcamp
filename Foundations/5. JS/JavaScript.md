@@ -1,5 +1,6 @@
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_1.jpg)
+# JavaScript
+
 
 - [JavaScript Refresher](#javascript-refresher)
   - [0. Adding JavaScript to a Web Page](#0-adding-javascript-to-a-web-page)
