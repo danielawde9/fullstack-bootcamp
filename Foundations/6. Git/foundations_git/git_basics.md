@@ -52,6 +52,9 @@ This section contains a general overview of topics that you will learn in this l
 
 #### Use the Git Workflow
 
+![image](https://github.com/danielawde9/fullstack-bootcamp/assets/8840298/a228e96c-7565-4f5a-a0bf-cdf1693d702e)
+
+
 1.  Create a new file in the `git_test` folder called "hello_world.txt" with the command `touch hello_world.txt`.
 
     ![Create hello_world.txt using CLI](https://cdn.statically.io/gh/TheOdinProject/curriculum/b54d14c5dcee1c6fac61aee02fca7e9ef7ba1510/foundations/git_basics/project_practicing_git_basics/imgs/06.png)
