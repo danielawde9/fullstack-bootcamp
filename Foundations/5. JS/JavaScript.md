@@ -3541,6 +3541,16 @@ console.log(evens) // [0, 2, 4, 6, 8, 10]
 console.log(odds) // [1, 3, 5, 7, 9]
 ```
 
+
+```js
+// Example: Filtering names starting with a specific letter
+const names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Frank'];
+
+const filteredNames = names.filter((name) => name.charAt(0) === 'C');
+
+console.log(filteredNames);
+// Output: ['Charlie']
+```
 Now, you know how to filter let us move on to the next functional programming, reduce.
 
 #### 4. reduce
@@ -3608,6 +3618,17 @@ const value = numbers.reduce((acc, cur) => acc * cur, 10)
 console.log(value) // 1200
 ```
 
+
+```js
+// Example: Finding the maximum value in an array using reduce()
+const numbers = [12, 43, 67, 27, 8, 54, 39];
+
+const maxNumber = numbers.reduce((max, currentNumber) => (currentNumber > max ? currentNumber : max), numbers[0]);
+
+console.log(maxNumber);
+// Output: 67
+
+```
 #### 5. find
 
 If we are interested in the first occurrence of a certain item or element in an array we can use find method. Unlike map and filter, find just return the first occurrence of an item instead of an array.
