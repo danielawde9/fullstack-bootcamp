@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculator</title>
+</head>
+<body>
+    <h1>Grade Calculator</h1>
+
+    <form id="gradeForm">
+        <label for="gradeInput">Enter a grade:</label>
+        <input type="number" id="gradeInput" name="gradeInput" min="0" max="100">
+        <button type="button" onclick="addGrade()">Add Grade</button>
+        <button type="button" onclick="calculateAndDisplay()">Calculate Average</button>
+    </form>
+
+    <h2>Average grade: <span id="averageGrade"></span></h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Grade</th>
+                <th>Letter Grade</th>
+            </tr>
+        </thead>
+        <tbody id="gradesTable">
+            <!-- Grades will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
