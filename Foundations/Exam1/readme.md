@@ -1,9 +1,9 @@
-**Name:**\_\_\_\_\_\_\_\_\_
+**Name:**Bilal Abou Baraki
 
 1. **HTML**: Which HTML element is used to specify a title for a document?
 
    - A. `<head>`
-   - B. `<title>`
+   - B. **`<title>`**
    - C. `<header>`
    - D. `<meta>`
 
@@ -11,12 +11,12 @@
 
    - A. Creative Style Sheets
    - B. Cascading Style Scripts
-   - C. Cascading Style Sheets
+   - C. **Cascading Style Sheets**
    - D. Computer Style Sheets
 
 3. **Git**: What command initializes a new Git repository?
 
-   - A. git init
+   - A. **git init**
    - B. git new
    - C. git start
    - D. git create
@@ -25,13 +25,13 @@
 
    - A. "10 > 9"
    - B. false
-   - C. true
+   - C. **true**
    - D. undefined
 
 5. **HTML**: Which HTML element is used to create an unordered list?
 
    - A. `<ol>`
-   - B. `<ul>`
+   - B. **`<ul>`**
    - C. `<li>`
    - D. `<p>`
 
@@ -39,13 +39,13 @@
 
    - A. The opacity level of an element
    - B. The width and height of an element
-   - C. The stack order of an element
+   - C. **The stack order of an element**
    - D. The border thickness of an element
 
 7. **Git**: How can you discard changes in the working directory in Git?
 
    - A. git checkout --
-   - B. git discard
+   - B. **git discard**
    - C. git undo
    - D. git clean
 
@@ -53,19 +53,19 @@
 
    - A. String
    - B. Boolean
-   - C. Function
+   - C. **Function**
    - D. Character
 
 9. **HTML**: Which of the following tags is used to insert a blank line in HTML?
 
-   - A. `<br>`
+   - A. **`<br>`**
    - B. `<hr>`
    - C. `<line>`
    - D. `<break>`
 
 10. **CSS**: Which CSS property is used to change the text color of an element?
 
-    - A. color
+    - A. **color**
     - B. text-color
     - C. font-color
     - D. textColor
@@ -74,20 +74,20 @@
 
     - A. git new branch
     - B. git branch new
-    - C. git branch <name>
+    - C. **git branch <name>**
     - D. git create <name>
 
 12. **JavaScript**: How do you declare a JavaScript variable?
 
     - A. variable carName;
-    - B. var carName;
+    - B. **var carName;**
     - C. v carName;
     - D. declare carName;
 
 13. **HTML**: Which doctype is correct for HTML5?
 
     - A. `<!DOCTYPE HTML PUBLIC>`
-    - B. `<!DOCTYPE HTML>`
+    - B. **`<!DOCTYPE HTML>`**
     - C. `<!DOCTYPE>`
     - D. `<!HTML>`
 
@@ -96,19 +96,19 @@
     - A. demo
     - B. .demo
     - C. \*demo
-    - D. #demo
+    - D. **#demo**
 
 15. **Git**: What is the purpose of the `git push` command?
 
     - A. To fetch from and integrate with another repository
     - B. To record changes to the repository
-    - C. To update remote refs along with associated objects
+    - C. **To update remote refs along with associated objects**
     - D. To list all new or modified files to be committed
 
 16. **JavaScript**: What is the correct JavaScript syntax to change the content of the HTML element below? `<p id="demo">This is a demonstration.</p>`
 
     - A. document.getElement("p").innerHTML = "Hello World!";
-    - B. document.getElementById("demo").innerHTML = "Hello - World!"
+    - B. **document.getElementById("demo").innerHTML = "Hello - World!"**
     - C. #demo.innerHTML = "Hello World!";
     - D. p.demo.innerHTML = "Hello World!";
 
@@ -116,20 +116,20 @@
 
     - A. `<checkbox>`
     - B. `<check>`
-    - C. `<input type="checkbox">`
+    - C. **`<input type="checkbox">`**
     - D. `<input type="check">`
 
 18. **CSS**: Which property is used to change the background color?
 
     - A. color
     - B. bg-color
-    - C. background-color
+    - C. **background-color**
     - D. bgcolor
 
 19. **Git**: What does `git clone` do?
 
     - A. Clones your local repository
-    - B. Clones a remote repository to your local machine
+    - B. **Clones a remote repository to your local machine**
     - C. Copies a branch
     - D. Copies a commit
 
@@ -138,33 +138,204 @@
     - A. A local variable for function
     - B. A global variable for function
     - C. A block of code
-    - D. An inner function that has access to the outer (enclosing) function's variables—scope chain.
+    - D. **An inner function that has access to the outer (enclosing) function's variables—scope chain.**
 
 21. **HTML**:
     Your task is to build a basic HTML structure for a blog article page. The page should have a header with the blog name, a main section, and a footer. The main section should include an article with a title, author name, published date, and the content of the article. Also include a section for comments. Each comment should display the commenter's name, comment date, and the comment itself.
 
+    ```
+    <!DOCTYPE html>
+    <html>
+      <head>
+    <meta charset='utf-8'>
+    <title>New York Times</title>
+    </head>
+    <body>
+    <header class="The_name_of_blog">
+    <h1>New York Times</h1>
+    </header>
+    <main>
+    <div class="main">
+    </div>
+    <h2 class="title_of_blog">AI chatbots are becoming more dangerous</h2>
+    <p class="author_name">Rowan Aktinson</p>
+    <p class="published_date">January 23, 2023</p>
+    <p class="the_article">in this article we will go into the growing risk of ai power.</p>
+    <div class="comment_of_user">
+    <p class="name">Commenter</p>
+    <p class="comment_date">February 28,2023</p>
+    <p class="comment_text">The comment</p>
+    </div>
+    </main>
+    </body>
+    ```
+
 22. **HTML**:
     Create a simple HTML table that has 3 rows and 2 columns. The first row should be the table header. Also, write CSS to make the table expand to the full width of its parent element and each cell should have a border.
+
+```
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        table{
+            width:100%;
+            botder : 3px solid blue;
+        }
+        .table_1 th,.table_1 td
+        {
+            border:1px solid black;
+        }
+        </style>
+    </head>
+    <body>
+    <table class="table_1">
+        <tr>
+            <th>Row 1 Column 1 Header</th>
+            <th>Row 1 Column 2 Header</th>
+        </tr>
+        <tr>
+            <td>Row 2 Column 1</td>
+            <td>Row 2 Column 2</td>
+        </tr>
+        <tr>
+            <td>Row 3 Column 1</td>
+            <td>Row 3 Column 2</td>
+        </tr>
+    </table>  
+</body>
+</html>
+```
 
 23. **CSS**:
     Write a CSS rule that changes the font color to blue for any paragraph that is a direct child of a div element.
 
+```
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+    .text_s1 > p {
+        color:gold;
+    }
+    </style>
+    <body> 
+        <div class='text_s1'>
+
+        </div> 
+        <p>
+        jkljkljlkjlkjklj
+        </p>
+        <p>
+        jlkjkljkljkljkljkljkjljkjl
+        </p> 
+    </body>
+</html>
+```
+
 24. **CSS**:
     Given the HTML structure for the blog from the previous question, use CSS to style it. The blog title should be centered and have a different color than the rest of the text. The article title should be bold and underlined. The comments section should have a different background color than the rest of the page.
+    .The_name_of_blog h1  {
+        color:cyan;'
+        display:flex;
+        justify-content:center;
+    }
+    .title_of_blog {
+        text-decoration:underlined,bold;
+    }
+    .comment{
+        background-color:green
+    }
+    ```
 
 25. **Javascript**:
     Write a JavaScript function that takes an array of numbers as an argument and returns the sum of all the numbers in the array. Test the function with an array of your choice.
+    
+    ```
+    let arr1=[20,40,60,90];
+    function addArray(array2)
+    {
+        let i=0;
+        let sum=0;
+        for(i=0;i<array2.length;i++)
+        {
+            sum+=array2[i];
+        }
+        return sum;
+    }
+    console.log(addArray(arr1));
+
+    ```
 
 26. **Javascript**:
     Create a JavaScript object that represents a student. The object should have properties for name, age, and subjects. Subjects should be an array of strings
+    ```
+    let student = {
+        'name':'John',
+        'age':17,
+        'subjects':['Math','Science','Social Studies'];
+    }
+
+    ```
 
 27. **Javascript**:
     Write a JavaScript function that adds a new item to a list in the HTML document. Assume the list has an id of "myList".
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="text" id="text_name">
+<button id="adder" onclick="addName(name)">Add To List</button>  
+<ol id="myList">
+    <li>Ahmad</li>
+    <li>Omar</li>
+    <li>Bilal</li>
+</ol>
+<script>
+let list= document.getElementById('myList')
+let name1=document.getElementById('text_name').value
+
+function addName(name) {
+  var h1="<li>"+name+"</li>"
+
+  return list.appendChild(h1);
+}
+addName(name1)
+</script>
+</body>
+</html>
+
+```
+
 28. **Git**:
     Write the Git command to clone a repository from GitHub
+    ```
+    git clone
+
+    ```
 
 29. **Git**:
     Write the Git command to check the status of your repository.
+    ```
+    git status
+
+    ```
 
 30. In your own words, define what "boilerplate code" means
+```
+The boilerplate code is piece of code that can be used multiple times in a program, where you can used on mutltiple html pages without rewriting the whole code, in which the code be written in it own file, in order to be used in several html and js files.
+
+```
