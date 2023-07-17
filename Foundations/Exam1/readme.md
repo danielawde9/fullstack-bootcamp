@@ -311,4 +311,4 @@ git clone <repository_URL>
 `git status`
 
 37. In your own words, define what "boilerplate code" means <br>
-boilerplate is a code that is rendered in the browser where we can call it more than one time and use it. This code can be modified a litlle when called.
+```boilerplate is a code that is rendered in the browser where we can call it more than one time and use it. This code can be modified a litlle when called.```
