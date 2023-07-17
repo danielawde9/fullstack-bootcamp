@@ -1,9 +1,9 @@
-**Name:**\_\_\_\_\_\_\_\_\_
+**Name:**Tamer Hamzeh
 
 1. **HTML**: Which HTML element is used to specify a title for a document?
 
    - A. `<head>`
-   - B. `<title>`
+   - B. `<title>` 
    - C. `<header>`
    - D. `<meta>`
 
