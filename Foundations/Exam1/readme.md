@@ -142,7 +142,7 @@
 
 21. **HTML**:
     Your task is to build a basic HTML structure for a blog article page. The page should have a header with the blog name, a main section, and a footer. The main section should include an article with a title, author name, published date, and the content of the article. Also include a section for comments. Each comment should display the commenter's name, comment date, and the comment itself.
-```
+```HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -189,7 +189,7 @@
 23. **HTML**:
     Create a simple HTML table that has 3 rows and 2 columns. The first row should be the table header. Also, write CSS to make the table expand to the full width of its parent element and each cell should have a border.
     
-```
+```HTML
 <!DOCTYPE html>
 <html>
 <head>
@@ -230,7 +230,7 @@
 
 25. **CSS**:
     Write a CSS rule that changes the font color to blue for any paragraph that is a direct child of a div element.
-```
+```CSS
 div > p {
   color: blue;
 }
@@ -239,7 +239,7 @@ div > p {
 27. **CSS**:
     Given the HTML structure for the blog from the previous question, use CSS to style it. The blog title should be centered and have a different color than the rest of the text. The article title should be bold and underlined. The comments section should have a different background color than the rest of the page.
 
-```
+```CSS
 <style>
     header {
         text-align: center;
@@ -260,9 +260,10 @@ div > p {
 
 </style>
 ```
+
 29. **Javascript**:
     Write a JavaScript function that takes an array of numbers as an argument and returns the sum of all the numbers in the array. Test the function with an array of your choice.
-```
+```javascript
 let sumArray = (arr){
    let sum = 0;
    for(var i = 0; i<arr.length; i++){
@@ -278,16 +279,18 @@ console.log(result);
 ```
 30. **Javascript**:
     Create a JavaScript object that represents a student. The object should have properties for name, age, and subjects. Subjects should be an array of strings
-```
+```javascript
 let student = {
    name: "",
    age: 12,
    subjects: ["","",""]
 }
 ```
+
+
 31. **Javascript**:
     Write a JavaScript function that adds a new item to a list in the HTML document. Assume the list has an id of "myList".
-```
+```javascript
 let addItemToList = (itemText) => {
   let myList = document.getElementById("myList");
   let newItem = document.createElement("li");
