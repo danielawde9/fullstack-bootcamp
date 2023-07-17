@@ -128,8 +128,8 @@
 
 19. **Git**: What does `git clone` do?
 
-   **- A. Clones your local repository**
-    - B. Clones a remote repository to your local machine
+    - A. Clones your local repository<br>
+    **- B. Clones a remote repository to your local machine**
     - C. Copies a branch
     - D. Copies a commit
 
