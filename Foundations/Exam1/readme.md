@@ -101,8 +101,8 @@
 15. **Git**: What is the purpose of the `git push` command?
 
     - A. To fetch from and integrate with another repository
-    **- B. To record changes to the repository**
-    - C. To update remote refs along with associated objects
+    - B. To record changes to the repository<br>
+    **- C. To update remote refs along with associated objects**
     - D. To list all new or modified files to be committed
 
 16. **JavaScript**: What is the correct JavaScript syntax to change the content of the HTML element below? `<p id="demo">This is a demonstration.</p>`
