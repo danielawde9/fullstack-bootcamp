@@ -142,29 +142,198 @@
 
 21. **HTML**:
     Your task is to build a basic HTML structure for a blog article page. The page should have a header with the blog name, a main section, and a footer. The main section should include an article with a title, author name, published date, and the content of the article. Also include a section for comments. Each comment should display the commenter's name, comment date, and the comment itself.
+``` html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog name</title>
+    <link rel="stylesheet" href="NB24.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="header-h1">blog Name</h1>
+        <div class="main">
+            <h1 class="ar-title">title of the article</h1>
+            <h2>author name</h2>
+            <h3>date</h3>
+            <p>article</p>
+        </div>
+        <div class="footer">
+
+
+
+            <p class="commentersname">Commenters name </p>
+            <p class="commentdate">Comment date</p>
+            <p class="comment">Comment</p>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+```
 22. **HTML**:
     Create a simple HTML table that has 3 rows and 2 columns. The first row should be the table header. Also, write CSS to make the table expand to the full width of its parent element and each cell should have a border.
+    ```html
+    
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        table {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <table>
+        <tr>
+            <th> table header 1</th>
+            <th>table header 2</th>
+        </tr>
+        <tr>
+            <th>row 2 col 1</th>
+            <th>row 2 col 2</th>
+        </tr>
+        <tr>
+            <th>row 3 col 1</th>
+            <th>row 3 col 2</th>
+        </tr>
+
+
+
+
+    </table>
+</body>
+
+</html>
+    
+    ```
 
 23. **CSS**:
     Write a CSS rule that changes the font color to blue for any paragraph that is a direct child of a div element.
+    ``` css
+    div > p {
+    color: blue;
+}
+    ```
 
 24. **CSS**:
     Given the HTML structure for the blog from the previous question, use CSS to style it. The blog title should be centered and have a different color than the rest of the text. The article title should be bold and underlined. The comments section should have a different background color than the rest of the page.
 
+    ``` css
+    .header-h1 {
+    margin-left: 50%;
+    color: red;
+}
+
+.ar-title {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+    ```
+
 25. **Javascript**:
     Write a JavaScript function that takes an array of numbers as an argument and returns the sum of all the numbers in the array. Test the function with an array of your choice.
+
+    ``` javascript
+    
+    let array = [1, 2, 3, 4, 5];
+
+  let sum = array.reduce(function(a, b){
+   return a + b;
+             });
+
+         console.log(sum);
+        
+    ```
 
 26. **Javascript**:
     Create a JavaScript object that represents a student. The object should have properties for name, age, and subjects. Subjects should be an array of strings
 
+    ```  jascript  
+             var student = { name :'Ali',
+                                    age : 4,
+                           subject : ['Math', 'English', 'Physics' ] }
+    
+    ```
+
 27. **Javascript**:
     Write a JavaScript function that adds a new item to a list in the HTML document. Assume the list has an id of "myList".
+
+    ```   jasascript
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="myList">
+        <li>hudhe</li>
+        <li>hufedhe</li>
+        <li>hudfefwhe</li>
+    </ul>
+
+
+    <script>
+        const =  newitem;
+
+        function adds(newitem) { myList.push(newitem) }
+    </script>
+
+
+
+
+</body>
+
+</html>
+
+
+
+    ```
 
 28. **Git**:
     Write the Git command to clone a repository from GitHub
 
+    git clone
+
 29. **Git**:
     Write the Git command to check the status of your repository.
 
+    git status
+
 30. In your own words, define what "boilerplate code" means
+
+is a code that can be reused over and over without change.
