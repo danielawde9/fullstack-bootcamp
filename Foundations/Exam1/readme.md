@@ -143,7 +143,8 @@
 21. **HTML**:
     Your task is to build a basic HTML structure for a blog article page. The page should have a header with the blog name, a main section, and a footer. The main section should include an article with a title, author name, published date, and the content of the article. Also include a section for comments. Each comment should display the commenter's name, comment date, and the comment itself.
 
-    **<!DOCTYPE HTML>
+    ```html
+    <!DOCTYPE HTML>
     <html lang="en">
     <head>
             <meta charset="UTF-8" />
@@ -166,30 +167,163 @@
         </article>
 
            
-   </body>**
+   </body>
+   ```
 
 22. **HTML**:
     Create a simple HTML table that has 3 rows and 2 columns. The first row should be the table header. Also, write CSS to make the table expand to the full width of its parent element and each cell should have a border.
 
-23. **CSS**:
-    Write a CSS rule that changes the font color to blue for any paragraph that is a direct child of a div element.
+   ```html
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table class="Registration">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;">1</td>
+            <td>Sam</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Sarah</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
+
+<style>
+    .Registration {
+        border: Ridge;
+        width: 100%;
+    }
+
+    table.Registration th {
+        border: dotted;
+        border-color: black;
+        width: 50%;
+    }
+
+    table.Registration td {
+        border: ridge;
+        border-color: black;
+        color: red;
+        width: 50%;
+    }
+</style>
+```
+    
 
 24. **CSS**:
+    Write a CSS rule that changes the font color to blue for any paragraph that is a direct child of a div element.
+    body > div > p {
+         color: blue;
+    }
+
+26. **CSS**:
     Given the HTML structure for the blog from the previous question, use CSS to style it. The blog title should be centered and have a different color than the rest of the text. The article title should be bold and underlined. The comments section should have a different background color than the rest of the page.
 
-25. **Javascript**:
+    ```html
+    <!DOCTYPE HTML>
+    <html lang="en">
+    <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="style.css" />
+            <title>Blog</title>
+   </head>
+
+   <body>
+        <article>
+             <header>
+                 <h1>Fashion Blog</h1>
+             </header>
+
+             <div class="main-section">
+                  <p class="blog-title" style="font-weight: bold;">Blog title</p>
+                  <p>Article's Author</p>
+                  <label>Article's publish Date</label> <p>January 29, 2020
+             </div>
+        </article>
+
+           
+   </body>
+
+   <style>
+      header{
+         text-align: center;
+         color: red;    
+      }
+
+      .blog-title{
+         font-weight: bold;
+         text-decoration-line: underline;
+      }
+      
+   </style>
+   ```
+
+28. **Javascript**:
     Write a JavaScript function that takes an array of numbers as an argument and returns the sum of all the numbers in the array. Test the function with an array of your choice.
 
-26. **Javascript**:
+    ```js
+          function arraySum(array) {
+          let sum = 0;
+          for (let i = 0; i < array.length; i++) {
+              sum = sum + array[i];
+          }
+      
+          console.log(sum);
+          return sum;
+          }
+      
+      A[5] = [1, 2, 3, 4, 5];
+      
+      arraySum(A);
+
+    ```
+
+29. **Javascript**:
     Create a JavaScript object that represents a student. The object should have properties for name, age, and subjects. Subjects should be an array of strings
+    ```js
+       student = {
+           name: "Diaa",
+           age: 23,
+           subjects : [
+                "English",
+                "Math"
+          ]
+       }
+    ```
 
-27. **Javascript**:
+30. **Javascript**:
     Write a JavaScript function that adds a new item to a list in the HTML document. Assume the list has an id of "myList".
+    ```js
+       
+    ```
 
-28. **Git**:
+32. **Git**:
     Write the Git command to clone a repository from GitHub
+    git clone repoLink
 
-29. **Git**:
+34. **Git**:
     Write the Git command to check the status of your repository.
+    git status
 
-30. In your own words, define what "boilerplate code" means
+36. In your own words, define what "boilerplate code" means
+  A boileplate code is a code that is used repetitively . A code of block used over and over again.
