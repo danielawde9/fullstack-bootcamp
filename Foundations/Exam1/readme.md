@@ -137,7 +137,7 @@
 
     - A. A local variable for function
     - B. A global variable for function
-    - C. A block of code
+    - C. A block of code<br>
     **- D. An inner function that has access to the outer (enclosing) function's variables—scope chain.**
 
 21. **HTML**:
