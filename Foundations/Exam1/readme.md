@@ -3,7 +3,7 @@
 1. **HTML**: Which HTML element is used to specify a title for a document?
 
    - A. `<head>` 
-  **- B. <title>**
+  **- B. `<title>`**
    - C. `<header>`
    - D. `<meta>`
 
@@ -31,7 +31,7 @@
 5. **HTML**: Which HTML element is used to create an unordered list?
 
    - A. `<ol>`
-   **- B. <ul>**
+   **- B. `<ul>`**
    - C. `<li>`
    - D. `<p>`
 
@@ -58,7 +58,7 @@
 
 9. **HTML**: Which of the following tags is used to insert a blank line in HTML?
 
-   **- A. <br>**
+   **- A. `<br>`**
    - B. `<hr>`
    - C. `<line>`
    - D. `<break>`
@@ -87,7 +87,7 @@
 13. **HTML**: Which doctype is correct for HTML5?
 
     - A. `<!DOCTYPE HTML PUBLIC>`
-    **- B. <!DOCTYPE HTML>**
+    **- B. `<!DOCTYPE HTML>`**
     - C. `<!DOCTYPE>`
     - D. `<!HTML>`
 
