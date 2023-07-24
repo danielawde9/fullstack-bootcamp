@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 16](../16_Higher_Order_Component/16_higher_order_component.md) | [Day 18 >>](../18_projects/18_projects.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_17.jpg)
+![30 Days of React banner](../images/_17.jpg)
 
 - [React Router](#react-router)
   - [What is React Router ?](#what-is-react-router-)

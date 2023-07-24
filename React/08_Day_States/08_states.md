@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 7](../07_Day_Class_Components/07_class_components.md) | [Day 9 >>](../09_Day_Conditional_Rendering/09_conditional_rendering.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_8.jpg)
+![30 Days of React banner](../images/_8.jpg)
 
 - [States](#states)
   - [What is State?](#what-is-state)

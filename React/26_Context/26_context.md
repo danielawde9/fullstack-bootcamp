@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 25](../25_Custom_Hooks/25_custom_hooks.md) | [Day 27>>](../27_Ref/27_ref.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_26.jpg)
+![30 Days of React banner](../images/_26.jpg)
 
 # Context
 

@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 15](../15_Third_Party_Packages/15_third_party_packages.md) | [Day 17 >>](../17_React_Router/17_react_router.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_16.jpg)
+![30 Days of React banner](../images/_16.jpg)
 
 - [Higher Order Component](#higher-order-component)
 - [Exercises](#exercises)

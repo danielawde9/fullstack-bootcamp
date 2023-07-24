@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 4](../04_Day_Component/04_components.md) | [Day 6 >>](../06_Day_Map_List_Keys/06_map_list_keys.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_5.jpg)
+![30 Days of React banner](../images/_5.jpg)
 
 - [Props](#props)
   - [Props in Functional Component](#props-in-functional-component)

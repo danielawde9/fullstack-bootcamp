@@ -9,7 +9,6 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
@@ -17,7 +16,7 @@
 
 [<< Day 2](../02_Day_Introduction_to_React/02_introduction_to_react.md) | [Day 4 >>](../04_Day_Components/04_components.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_3.jpg)
+![30 Days of React banner](../images/_3.jpg)
 
 - [Setting Up](#setting-up)
   - [Node](#node)

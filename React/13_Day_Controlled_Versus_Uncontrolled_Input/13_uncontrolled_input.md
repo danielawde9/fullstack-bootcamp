@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 12](../12_Day_Forms/12_forms.md) | [Day 14 >>]()
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_13.jpg)
+![30 Days of React banner](../images/_13.jpg)
 
 - [Uncotrolled Components](#uncotrolled-components)
   - [Getting data from an uncontrolled input](#getting-data-from-an-uncontrolled-input)

@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 9](../09_Day_Conditional_Rendering/09_conditional_rendering.md) | [Day 11 >>](../11_Day_Events/11_events.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_10.jpg)
+![30 Days of React banner](../images/_10.jpg)
 
 - [React Project Folder Structure and File Naming](#react-project-folder-structure-and-file-naming)
   - [File Naming](#file-naming)

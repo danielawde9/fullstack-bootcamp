@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 13](../13_Day_Controlled_Versus_Uncontrolled_Input/13_uncontrolled_input.md) | [Day 15 >>](../15_Third_Party_Packages/15_third_party_packages.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_14.jpg)
+![30 Days of React banner](../images/_14.jpg)
 
 - [Component Life Cycles](#component-life-cycles)
   - [What is component life cycle](#what-is-component-life-cycle)

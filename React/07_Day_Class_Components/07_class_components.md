@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 6](../06_Day_Map_List_Keys/06_map_list_keys.md) | [Day 8 >>](../08_Day_States/08_states.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_7.jpg)
+![30 Days of React banner](../images/_7.jpg)
 
 - [Class Components](#class-components)
   - [Accessing props in Class components](#accessing-props-in-class-components)

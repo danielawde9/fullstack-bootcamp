@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 22](../22_Form_Using_Hooks/22_form_using_hooks.md) | [Day 24>>](../24_projects/24_projects.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_23.jpg)
+![30 Days of React banner](../images/_23.jpg)
 
 - [Introducing React Hook](#introducing-react-hook)
   - [Basic Hooks](#basic-hooks)

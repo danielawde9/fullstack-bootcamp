@@ -9,14 +9,13 @@
 
 <sub>Author:
 <a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
-<small> October, 2020</small>
 </sub>
 
 </div>
 
 [<< Day 5](./../05_Day_Props/05_props.md) | [Day 7 >>](../07_Day_Class_Components/07_class_components.md)
 
-![30 Days of React banner](../images/30_days_of_react_banner_day_6.jpg)
+![30 Days of React banner](../images/_6.jpg)
 
 - [Mapping arrays](#mapping-arrays)
   - [Mapping and rendering arrays](#mapping-and-rendering-arrays)
