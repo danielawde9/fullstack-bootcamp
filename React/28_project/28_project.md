@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Days Of React: Project</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/DanielAwde9/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/DanielAwde9">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/DanielAwde9?style=social">
   </a>
 
 <sub>Author:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
 <small> October, 2020</small>
 </sub>
 
@@ -29,7 +29,7 @@ In this section, you and I will develop an old version of twitter post.
 
 # Exercises
 
-1. Develop the following application, [twitter tweets](https://www.30daysofreact.com/day-28/twitter-clone). The application has all the CRUD operations. 
+1. Develop the following application, [twitter tweets](https://www.30daysofreact.com/day-28/twitter-clone). The application has all the CRUD operations.
 
 🎉 CONGRATULATIONS ! 🎉
 

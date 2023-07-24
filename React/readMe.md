@@ -5,12 +5,12 @@
 <div align="center">
 
   <h1> 30 Days Of React</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/DanielAwde9/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
 
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/DanielAwde9">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/DanielAwde9?style=social">
   </a>
 
 </div>
@@ -91,11 +91,11 @@ React can do everything that JavaScript can do. React can be used **_to add inte
 I believe you will learn quite a lot in the next 30 days and your programming and problem solving skills will also be improved significantly.
 
 I will use conversational English and less jargons to write this challenge. The content will be continuously updated. If you find a typo or grammar mistakes don't be surprised because I don't do any proof read before I publish it. I would recommend you to focus on the main message of the challenge instead of the English and some minor mistakes. I really appreciate if you send me pull requests for improvement and remember to pull first from master before you send pull requests. Most of the images I have used in this challenge came from 30DaysOfJavaScript challenge therefore you may need to rename file names and folders 30DaysOfReact.
-If you are good at arrays, loops, functions, objects, functional programming, destructuring and spreading and class then you will be able to follow the challenge properly. Otherwise, I strongly recommend you to check [30DaysOfJavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript).
+If you are good at arrays, loops, functions, objects, functional programming, destructuring and spreading and class then you will be able to follow the challenge properly. Otherwise, I strongly recommend you to check [30DaysOfJavaScript](https://github.com/DanielAwde9/30-Days-Of-JavaScript).
 
 Before you dive into this course, you may check the [review](https://t.me/thirtydaysofreact) of 30 Days Of React.
 
-This challenge is easy to read, written in conversational English, engaging, motivating and at the same time, it is very demanding. You need to allocate much time to finish this challenge. If you are a visual learner, you may get the video lesson on <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> Washera</a> YouTube channel. Subscribe the channel, comment and ask questions on YouTube vides and be proactive, the author will eventually notice you. 
+This challenge is easy to read, written in conversational English, engaging, motivating and at the same time, it is very demanding. You need to allocate much time to finish this challenge. If you are a visual learner, you may get the video lesson on <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> Washera</a> YouTube channel. Subscribe the channel, comment and ask questions on YouTube vides and be proactive, the author will eventually notice you.
 
 The author likes to hear your opinion about the challenge, share your thoughts about the 30DaysOfJavaScript challenge. You can leave your testimonial on this [link](https://testimonial-vdzd.onrender.com/)
 
@@ -160,10 +160,10 @@ This repo will be updated daily throughout the month. When a new day's content b
 ```bash
 # 1. switch to master branch
 git checkout master
-# 2. check if your local copy has a link to original `...Asabeneh/30-Days-Of-React.git`
+# 2. check if your local copy has a link to original `...DanielAwde9/30-Days-Of-React.git`
 git remote -v
 # 3. if not, add a link to original, you can choose any name for the link or use `upstream`
-git remote add upstream git@github.com:Asabeneh/30-Days-Of-React.git
+git remote add upstream git@github.com:DanielAwde9/30-Days-Of-React.git
 # 4. check again to confirm link added
 git remote -v
 # 5. now you can fetch updates from original repo, assuming you named this `upstream`
@@ -198,7 +198,7 @@ After downloading double click and install
 We can check if node is installed on our local machine by opening our device terminal or command prompt.
 
 ```sh
-asabeneh $ node -v
+DanielAwde9 $ node -v
 v12.14.0
 ```
 
@@ -254,7 +254,7 @@ Ctl+Shift+I
 To write our first JavaScript code, we used a built-in function **console.log()**. We passed an argument as input data, and the function displays the output. We passed 'Hello, World' as input data or argument in the console.log() function.
 
 ```js
-console.log('Hello, World!')
+console.log("Hello, World!");
 ```
 
 ##### Console.log with Multiple Arguments
@@ -264,9 +264,9 @@ The **console.log()** function can take multiple parameters separated by comma. 
 ![console log multiple arguments](./images/console_log_multipl_arguments.png)
 
 ```js
-console.log('Hello', 'World', '!')
-console.log('HAPPY', 'NEW', 'YEAR', 2020)
-console.log('Welcome', 'to', 30, 'Days', 'Of', 'JavaScript')
+console.log("Hello", "World", "!");
+console.log("HAPPY", "NEW", "YEAR", 2020);
+console.log("Welcome", "to", 30, "Days", "Of", "JavaScript");
 ```
 
 As you can see from the snippet code above, _console.log()_ can take multiple arguments. It is recommended to use as many console.log() prints to check what is happening in your code but don't keep all console.log() tests on your code forever. Make your life easy by keeping the browser console open.
@@ -298,17 +298,17 @@ Programming languages are similar to human languages. English or many other lang
 I made a deliberate mistake. As a result, the console raises syntax errors. Actually, the syntax is very informative. It informs what type of mistake was made. By reading the error feedback guideline, we can correct the syntax and fix the problem. The process of identifying and removing errors from a program is called debugging. Let us fix the errors:
 
 ```js
-console.log('Hello, World!')
-console.log('Hello, World!')
+console.log("Hello, World!");
+console.log("Hello, World!");
 ```
 
 So far, we saw how to display text using the _console.log()_. If we are printing text or string using _console.log()_, the text has to be inside the single quotes, double quotes, or a backtick quotes.
 **Example:**
 
 ```js
-console.log('Hello, World!')
-console.log('Hello, World!')
-console.log(`Hello, World!`)
+console.log("Hello, World!");
+console.log("Hello, World!");
+console.log(`Hello, World!`);
 ```
 
 #### Arithmetics
@@ -320,12 +320,12 @@ The console can directly take arguments without the **_console.log()_** function
 ![Arithmetic](images/arithmetic.png)
 
 ```js
-console.log(2 + 3) // Addition
-console.log(3 - 2) // Subtraction
-console.log(2 * 3) // Multiplication
-console.log(3 / 2) // Division
-console.log(3 % 2) // Modulus - finding remainder
-console.log(3 ** 2) // Exponentiation 3 ** 2 == 3 * 3
+console.log(2 + 3); // Addition
+console.log(3 - 2); // Subtraction
+console.log(2 * 3); // Multiplication
+console.log(3 / 2); // Division
+console.log(3 % 2); // Modulus - finding remainder
+console.log(3 ** 2); // Exponentiation 3 ** 2 == 3 * 3
 ```
 
 ### Code Editor

@@ -1,14 +1,14 @@
 <div align="center">
   <h1> 30 Days Of React: Conclusions</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/DanielAwde9/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/Asabeneh">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
+  <a class="header-badge" target="_blank" href="https://twitter.com/DanielAwde9">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/DanielAwde9?style=social">
   </a>
 
 <sub>Author:
-<a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
+<a href="https://www.linkedin.com/in/DanielAwde9/" target="_blank">Daniel Awde</a><br>
 <small> October, 2020</small>
 </sub>
 
@@ -24,8 +24,8 @@ In this challenge, we have covered React with and without hooks. All the most im
 You have been learning and coding for the last 30 days and you made it to this day. You are a special person and you deserve recognition. Therefore, you can claim a 30 Days React challenge completion certificate. In addition, celebrate your success with a friend and family. I will see you in another challenge or courses. Thank you for being a proactive community member and part of the challenge. Finally, recommend the material for a family, friend or enemy if you believe that it helped you and of course support the author to create more learning materials.
 
 ## Testimony
-Now it is time to express your thoughts about the Author and 30DaysOfReact. You can leave your testimonial on this [link](https://testimonial-vdzd.onrender.com)
 
+Now it is time to express your thoughts about the Author and 30DaysOfReact. You can leave your testimonial on this [link](https://testimonial-vdzd.onrender.com)
 
 # Exercises
 
