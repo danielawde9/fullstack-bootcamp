@@ -6,7 +6,7 @@
 
   <h1> 30 Days Of React</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/DanielAwde9/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  <img src=""badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
 
   <a class="header-badge" target="_blank" href="https://twitter.com/DanielAwde9">
