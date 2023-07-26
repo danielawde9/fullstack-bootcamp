@@ -291,6 +291,22 @@ const PI = 3.14; // Not allowed to reassign PI to a new value
 // PI = 3.
 ```
 
+```javascript
+let str1 = 'Hello'; // string literal
+let str2 = "World"; // string literal
+let str3 = new String("Hello World"); // string object
+
+let bool = true
+
+let num1 = 123; // integer
+let num2 = 12.3; // floating-point number
+let num3 = 3.14e-10; // exponential notation
+let inf = Infinity;
+let ninf = -Infinity;
+let notANumber = NaN;
+
+```
+
 ### 2. Data types
 
 If you do not feel comfortable with data types check the following [link](https://github.com/DanielAwde9/30-Days-Of-JavaScript/blob/master/02_Day_Data_types/02_day_data_types.md)
