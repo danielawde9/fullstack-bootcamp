@@ -4568,10 +4568,47 @@ So do not directly manipulate the DOM if you are using react. The only place we 
 </html>
 ```
 
-Check out there result on [codepen](https://codepen.io/DanielAwde9/full/vYGqQxP)
+Selecting Element 
+```js
+let element = document.getElementById('myId'); // Access an element by its id
 
-🌕 You are amazing! You have just completed day 1 challenge and you are on your way to greatness. Now you are a JavaScript Ninja and ready to dive into React.
+let elements = document.getElementsByClassName('myClass'); // Access elements by their class name
+
+let elements = document.getElementsByTagName('myTag'); // Access elements by their tag name
+
+element.textContent = 'New Text'; // Change the text of an element
+
+element.setAttribute('attribute', 'value'); // Set an attribute
+
+element.style.color = 'blue'; // Change CSS styles
+
+```
+
+Add or delete element 
+
+```js
+
+let newElement = document.createElement('div'); // Create a new element
+
+document.body.appendChild(newElement); // Add the new element to the body
+
+newElement.remove(); // Remove an element
+
+```
+
+Event Listener 
+
+```js
+// Get a reference to the button element
+let myButton = document.getElementById('myButton');
+
+// Add a 'click' event listener to the button
+myButton.addEventListener('click', function() {
+    // This code will run whenever the button is clicked
+    console.log('Button was clicked!');
+});
+
+```
+
 
 🎉 CONGRATULATIONS ! 🎉
-
-[<< Day 0](../readMe.md) | [Day 2 >>](../02_Day_Introduction_to_React/02_introduction_to_react.md)
