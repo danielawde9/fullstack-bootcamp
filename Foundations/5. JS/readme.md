@@ -4610,5 +4610,63 @@ myButton.addEventListener('click', function() {
 
 ```
 
+### 14 Manipulating Styles
+
+- Changing multiple styles at once: You can change as many CSS properties as you like within the same function. Try adding a line of code to change the color of the text inside the button as well.
+
+```js
+
+<button id="myButton">Click Me!</button>
+
+<script>
+    var button = document.getElementById("myButton");
+
+    button.addEventListener("click", function() {
+        button.style.backgroundColor = "red";
+        button.style.color = "white";
+    });
+</script>
+
+```
+
+- Toggling styles: Sometimes, you want to apply a style once, and then remove it when the same event happens again. Try creating a button that changes color the first time it's clicked, and then changes back to its original color the second time.
+
+```js
+
+<button id="myButton">Click Me!</button>
+
+<script>
+    var button = document.getElementById("myButton");
+    var isRed = false;
+
+    button.addEventListener("click", function() {
+        if (isRed) {
+            button.style.backgroundColor = "";
+            button.style.color = "";
+        } else {
+            button.style.backgroundColor = "red";
+            button.style.color = "white";
+        }
+        isRed = !isRed;
+    });
+</script>
+
+```
+- Manipulating classes: Sometimes, it's better to define a set of styles in your CSS using a class, and then add or remove that class using JavaScript. Try defining a CSS class with a couple of styles, and then add a line of JavaScript code to add this class to your button when it's clicked. You can use the classList property for this, which has add, remove, and toggle methods.
+
+``` js
+<button id="myButton">Click Me!</button>
+
+<script>
+    var button = document.getElementById("myButton");
+
+    button.addEventListener("click", function() {
+        button.classList.toggle("myClass");
+    });
+</script>
+
+```
 
 🎉 CONGRATULATIONS ! 🎉
+
+
