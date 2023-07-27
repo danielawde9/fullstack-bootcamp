@@ -4667,6 +4667,3 @@ myButton.addEventListener('click', function() {
 
 ```
 
-🎉 CONGRATULATIONS ! 🎉
-
-
