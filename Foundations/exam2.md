@@ -1,8 +1,8 @@
-What does the JavaScript 'strict mode' do?
-A. It makes the code more readable
-B. It enforces stricter parsing and error handling
-C. It makes the code run faster
-D. None of the above
+  - What does the JavaScript 'strict mode' do?
+  A. It makes the code more readable
+  B. It enforces stricter parsing and error handling
+  C. It makes the code run faster
+  D. None of the above
 Which of the following is a correct way to define a constant in JavaScript?
 A. let PI = 3.14;
 B. var PI = 3.14;
