@@ -1,5 +1,4 @@
-
-React forms are similar to regular HTML forms, but with some key differences. In HTML, form elements such as <input>, <textarea>, and <select> maintain their own state and update based on user input. In React, mutable state is typically kept in the state property of components and updated with setState().
+# forms 
 
 Let's start with a simple form and gradually add more features to it.
 
