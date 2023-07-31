@@ -56,7 +56,7 @@ Now, when you submit the form, an alert will pop up saying "Form submitted." Not
 
 3. Controlled Components
 
-In React, form inputs such as <input>, <textarea>, and <select> are typically used as "controlled components." This means that the value of the input is controlled by the state of the component, and every change to the input updates the state.
+In React, form inputs such as input,textarea, and select are typically used as "controlled components." This means that the value of the input is controlled by the state of the component, and every change to the input updates the state.
 
 Let's make the text input in our form a controlled component.
 
