@@ -4569,6 +4569,7 @@ So do not directly manipulate the DOM if you are using react. The only place we 
 ```
 
 Selecting Element 
+
 ```js
 let element = document.getElementById('myId'); // Access an element by its id
 
