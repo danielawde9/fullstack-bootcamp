@@ -4,17 +4,20 @@ Installing React Router
 
 Now, install the react-router-dom package. This package provides DOM bindings for React Router.
 
-bash
-Copy code
+```
+
 npm install react-router-dom@6
+```
+
 Step 3: Creating Components
 
 Before setting up the router, let's create some components. For simplicity, we'll create three simple components.
 
 Home.js
 
-jsx
-Copy code
+
+```
+
 import React from 'react';
 
 const Home = () => {
@@ -26,10 +29,13 @@ const Home = () => {
 };
 
 export default Home;
+```
+
 About.js
 
-jsx
-Copy code
+
+```
+
 import React from 'react';
 
 const About = () => {
@@ -41,10 +47,13 @@ const About = () => {
 };
 
 export default About;
+```
+
 Contact.js
 
-jsx
-Copy code
+
+```
+
 import React from 'react';
 
 const Contact = () => {
@@ -56,14 +65,17 @@ const Contact = () => {
 };
 
 export default Contact;
+```
+
 Step 4: Setting Up Routes
 
 Now let's set up routing. We will import the necessary components from react-router-dom and define our routes.
 
 App.js
 
-jsx
-Copy code
+
+```
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
@@ -93,6 +105,8 @@ function App() {
 }
 
 export default App;
+```
+
 In this setup:
 
 <Router> is a React component that wraps the application.
@@ -105,7 +119,7 @@ Step 5: Testing the Application
 You can now run your application to see the routing in action:
 
 bash
-Copy code
+
 npm start
 Browse to http://localhost:3000 to see your application. Try clicking the links to navigate between the different components.
 
@@ -118,8 +132,9 @@ Modified Nav bar
 
 App.js:
 
-jsx
-Copy code
+
+```
+
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
@@ -141,10 +156,12 @@ function App() {
 }
 
 export default App;
+```
+
 Navigation.js:
 
-jsx
-Copy code
+```
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -161,3 +178,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
+```
