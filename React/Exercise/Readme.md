@@ -650,3 +650,202 @@ export default App;
 ```
 
 The exercises above should give you a good understanding of these fundamental concepts in React. Always feel free to expand on them or create your own variations to practice!
+
+
+
+
+useState:
+The useState hook is a built-in hook that allows you to add React state to function components. It returns an array with the first item being the current state and the second item being a function to update the state.
+
+Easy exercise: Create a component with a counter that starts at 0. Include increment and decrement buttons to modify the counter.
+
+Solution:
+
+
+```
+
+import React, { useState } from 'react';
+
+const Counter = () => {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={() => setCount(count - 1)}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+```
+
+Hard exercise: Create a component with an input field that updates a piece of state every time the input field changes.
+
+Solution:
+
+
+```
+
+import React, { useState } from 'react';
+
+const InputField = () => {
+  const [text, setText] = useState('');
+
+  const handleChange = event => setText(event.target.value);
+
+  return (
+    <div>
+      <input type="text" value={text} onChange={handleChange} />
+      <p>You typed: {text}</p>
+    </div>
+  );
+};
+
+export default InputField;
+```
+
+useEffect:
+The useEffect hook lets you perform side effects in function components. A side effect could be data fetching, setting up a subscription, or manually changing the DOM.
+
+Easy exercise: Create a component that fetches and displays a random joke from the "Official Joke API" every time the component mounts.
+
+Solution:
+
+
+```
+
+import React, { useState, useEffect } from 'react';
+
+const Joke = () => {
+  const [joke, setJoke] = useState('');
+
+  useEffect(() => {
+    fetch('https://official-joke-api.appspot.com/random_joke')
+      .then(response => response.json())
+      .then(data => setJoke(`${data.setup} ${data.punchline}`));
+  }, []);
+
+  return (
+    <div>
+      <p>{joke}</p>
+    </div>
+  );
+};
+
+export default Joke;
+```
+
+Hard exercise: Create a component that starts a timer when it mounts and clears the timer when it unmounts. The component should also display the current time.
+
+Solution:
+
+
+```
+
+import React, { useState, useEffect } from 'react';
+
+const Timer = () => {
+  const [time, setTime] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    const timerId = setInterval(() => {
+      setTime(new Date().toLocaleTimeString());
+    }, 1000);
+
+    return () => {
+      clearInterval(timerId);
+    };
+  }, []);
+
+  return (
+    <div>
+      <p>Current time: {time}</p>
+    </div>
+  );
+};
+
+export default Timer;
+```
+
+useReducer:
+The useReducer hook is an alternative to useState. It is usually preferable to useState when you have complex state logic that involves multiple sub-values. It also allows for more complex state transitions.
+
+Easy exercise: Create a counter component with increment and decrement buttons, similar to the first useState exercise but using useReducer instead.
+
+Solution:
+
+
+```
+
+import React, { useReducer } from 'react';
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'increment':
+      return { count: state.count + 1 };
+    case 'decrement':
+      return { count: state.count - 1 };
+    default:
+      throw new Error();
+  }
+};
+
+const Counter = () => {
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
+
+  return (
+    <div>
+      <p>Count: {state.count}</p>
+      <button onClick={() => dispatch({ type: 'increment' })}>Increment</button>
+      <button onClick={() => dispatch({ type: 'decrement' })}>Decrement</button>
+    </div>
+  );
+};
+
+export default Counter;
+```
+
+Hard exercise: Create a todo list component. The state should be an array of todo items, and there should be buttons to add a new todo item and to clear all todo items.
+
+Solution:
+
+
+```
+import React, { useReducer } from 'react';
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'add':
+      return [...state, action.payload];
+    case 'clear':
+      return [];
+    default:
+      throw new Error();
+  }
+};
+
+const TodoList = () => {
+  const [state, dispatch] = useReducer(reducer, []);
+  const [text, setText] = useState('');
+
+  const addTodo = () => {
+    dispatch({ type: 'add', payload: text });
+    setText('');
+  };
+
+  return (
+    <div>
+      <input type="text" value={text} onChange={event => setText(event.target.value)} />
+      <button onClick={addTodo}>Add todo</button>
+      <button onClick={() => dispatch({ type: 'clear' })}>Clear todos</button>
+      <ul>
+        {state.map((todo, index) => <li key={index}>{todo}</li>)}
+      </ul>
+    </div>
+  );
+};
+
+export default TodoList;
+```

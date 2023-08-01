@@ -391,10 +391,56 @@ ReactDOM.render(<App />, rootElement);
 ```
 
 ### Effect Hook
+Let's create a simple React component that displays a welcome message and updates it when the user's name changes.
 
-### Context Hook
 
-## Additional Hook
+```
+import React, { useState, useEffect } from 'react';
+
+const WelcomeMessage = () => {
+  const [name, setName] = useState('');
+  const [welcomeMessage, setWelcomeMessage] = useState('');
+
+  useEffect(() => {
+    // This function will be called after the component is mounted and whenever 'name' changes.
+    setWelcomeMessage(`Welcome, ${name || 'stranger'}!`);
+  }, [name]);
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  return (
+    <div>
+      <label htmlFor="nameInput">Your Name:</label>
+      <input id="nameInput" type="text" value={name} onChange={handleNameChange} />
+      <p>{welcomeMessage}</p>
+    </div>
+  );
+};
+
+export default WelcomeMessage;
+```
+In this example, we have a WelcomeMessage component that uses the useState hook to manage the name state and the welcomeMessage state. We also use the useEffect hook to update the welcomeMessage whenever the name changes.
+
+When the component is mounted initially, the useEffect function runs once and sets the initial welcome message. When the user enters their name in the input field, the name state changes, triggering the useEffect to update the welcomeMessage.
+
+Real-Life Use Cases:
+Data Fetching: useEffect is commonly used to fetch data from APIs or external sources when the component is mounted or when specific dependencies change. For example, you can fetch user information from a server when a component loads.
+
+Subscriptions and Event Listeners: If you need to set up subscriptions or event listeners, useEffect is useful for handling their creation and cleanup when the component unmounts.
+
+Updating the Document Title: You can use useEffect to update the document title dynamically based on the component's state. For instance, setting the page title to reflect the current page content.
+
+Integration with Third-Party Libraries: useEffect can be used to interact with third-party libraries that require initialization or cleanup.
+
+Tracking Analytics: If you want to track page views or user interactions for analytics purposes, you can use useEffect to send events to your analytics service.
+
+Remember to clean up any resources or subscriptions you create inside useEffect to avoid memory leaks. To do this, simply return a cleanup function inside the effect function.
+
+Overall, useEffect is a powerful tool that allows you to manage side effects in a clean and declarative way in your React components.
+
+
 
 # Exercises
 
