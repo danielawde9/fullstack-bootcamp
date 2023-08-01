@@ -1,9 +1,9 @@
 # Promises
 Promises in JavaScript are objects representing the eventual completion or failure of an asynchronous operation. Essentially, they are a return value of an operation that hasn't necessarily completed yet.
 
-Easy exercise: Create a simple promise that resolves to a string "Hello, World!" after 2 seconds.
+## easy exercise: Create a simple promise that resolves to a string "Hello, World!" after 2 seconds.
 
-# Solution
+## Solution
 
 
 ```javascript
@@ -13,9 +13,9 @@ setTimeout(() => resolve("Hello, World!"), 2000);
 
 promise.then(alert); // Alerts "Hello, World!" after 2 seconds.
 ```
-Hard exercise: Create a promise-based function fetchData(url) that fetches data from a given url. It should resolve to the response if the status is 200 and reject with status text otherwise.
+## Hard exercise: Create a promise-based function fetchData(url) that fetches data from a given url. It should resolve to the response if the status is 200 and reject with status text otherwise.
 
-# Solution
+## Solution
 ```javascript
 function fetchData(url) {
 return new Promise((resolve, reject) => {
@@ -35,18 +35,18 @@ reject(response.statusText);
 # Async/Await
 Async/await in JavaScript is a syntax sugar over Promises which makes asynchronous code look more like synchronous code.
 
-Easy exercise: Rewrite the promise from the easy exercise above using async/await.
+## easy exercise: Rewrite the promise from the ## easy exercise above using async/await.
 
-# Solution
+## Solution
 
 async function helloWorld() {
 return "Hello, World!";
 }
 
 helloWorld().then(alert); // Alerts "Hello, World!"
-Hard exercise: Rewrite the fetchData(url) function from the hard exercise above using async/await.
+## Hard exercise: Rewrite the fetchData(url) function from the ## Hard exercise above using async/await.
 
-# Solution
+## Solution
 
 
 async function fetchData(url) {
@@ -64,9 +64,9 @@ throw new Error(response.statusText);
 # Destructuring
 Destructuring in JavaScript is a way to extract values from data stored in objects and arrays.
 
-Easy exercise: Given an object { name: "Alice", age: 25 }, use destructuring to assign these values to two variables name and age.
+## easy exercise: Given an object { name: "Alice", age: 25 }, use destructuring to assign these values to two variables name and age.
 
-# Solution
+## Solution
 
 
 ```javascript
@@ -77,9 +77,9 @@ let { name, age } = person;
 
 console.log(name); // Alice
 console.log(age);  // 25
-Hard exercise: Given an array of objects representing users, e.g., [{id: 1, name: "John", email: "john@example.com"}, ...], use destructuring and array methods to create a new array of emails.
+## Hard exercise: Given an array of objects representing users, e.g., [{id: 1, name: "John", email: "john@example.com"}, ...], use destructuring and array methods to create a new array of emails.
 
-# Solution
+## Solution
 
 
 ```javascript
@@ -98,7 +98,7 @@ console.log(emails); // ["john@example.com", "jane@example.com", ...]
 # Arrow Functions
 Arrow functions in JavaScript provide a concise syntax for defining functions and also lexically bind the this value.
 
-# Easy exercise: Convert the following function declaration to an arrow function
+# ## easy exercise: Convert the following function declaration to an arrow function
 
 
 ```javascript
@@ -108,16 +108,16 @@ return "Hello, " + name;
 }
 ```
 
-# Solution
+## Solution
 
 
 
 ```javascript
 let greet = name => "Hello, " + name;
 ```
-Hard exercise: Rewrite the fetchData(url) function from the previous exercises using arrow functions.
+## Hard exercise: Rewrite the fetchData(url) function from the previous exercises using arrow functions.
 
-# Solution
+## Solution
 
 
 
@@ -137,18 +137,18 @@ throw new Error(response.statusText);
 # Template Literals
 Template literals provide a more flexible way to work with strings in JavaScript, allowing expressions to be embedded within them and multi-line strings.
 
-Easy exercise: Rewrite the greet arrow function using template literals.
+## easy exercise: Rewrite the greet arrow function using template literals.
 
-# Solution
+## Solution
 
 
 
 ```javascript
 let greet = name => `Hello, ${name}`;
 ```
-Hard exercise: Given an array of objects representing users, like before, use destructuring and template literals to log each user's details in the format "User [name] with ID [id] has email [email]."
+## Hard exercise: Given an array of objects representing users, like before, use destructuring and template literals to log each user's details in the format "User [name] with ID [id] has email [email]."
 
-# Solution
+## Solution
 
 
 
@@ -165,9 +165,9 @@ users.forEach(({ id, name, email }) => console.log(`User ${name} with ID ${id} h
 # Modules
 JavaScript modules are individual units of code that can be imported and exported from other modules. This makes the codebase easier to manage, more readable, and more maintainable.
 
-Easy exercise: Create a simple module greetings.js that exports the greet function we defined earlier. Then, import it in another file and use it.
+## easy exercise: Create a simple module greetings.js that exports the greet function we defined earlier. Then, import it in another file and use it.
 
-# Solution
+## Solution
 
 
 
@@ -178,9 +178,9 @@ Easy exercise: Create a simple module greetings.js that exports the greet functi
     import { greet } from './greetings.js';
 
     console.log(greet("John"));  // "Hello, John"
-Hard exercise: Organize the following functions into modules: fetchData(url), greet(name), and a new function getUserEmails(users) that returns an array of emails from an array of user objects.
+## Hard exercise: Organize the following functions into modules: fetchData(url), greet(name), and a new function getUserEmails(users) that returns an array of emails from an array of user objects.
 
-# Solution
+## Solution
 
 
 ```javascript
@@ -205,9 +205,9 @@ import { getUserEmails } from './users.js';
 # Array Methods (map, filter, etc.)
 JavaScript arrays come with a number of useful methods for processing and manipulating arrays, such as map(), filter(), and so on.
 
-Easy exercise: Given an array of numbers, use the map() method to create a new array where each number is multiplied by 2.
+## easy exercise: Given an array of numbers, use the map() method to create a new array where each number is multiplied by 2.
 
-# Solution
+## Solution
 
 
 
@@ -218,9 +218,9 @@ let doubled = numbers.map(number => number * 2);
 ```
 
 console.log(doubled);  // [2, 4, 6, 8, 10]
-Hard exercise: Given an array of objects representing users, like before, use filter() and destructuring to create a new array containing only users whose email domain is "example.com".
+## Hard exercise: Given an array of objects representing users, like before, use filter() and destructuring to create a new array containing only users whose email domain is "example.com".
 
-# Solution
+## Solution
 
 
 
@@ -242,9 +242,9 @@ console.log(filteredUsers);
 # Reduce
 The reduce() method in JavaScript is used to apply a function to each element in an array to reduce the array to a single output value.
 
-Easy exercise: Given an array of numbers, use the reduce() method to find the sum of all numbers in the array.
+## easy exercise: Given an array of numbers, use the reduce() method to find the sum of all numbers in the array.
 
-# Solution
+## Solution
 
 
 
@@ -255,9 +255,9 @@ let sum = numbers.reduce((total, number) => total + number, 0);
 ```
 
 console.log(sum);  // 15
-Hard exercise: Given an array of objects representing users, like before, use reduce() to create an object where the keys are user IDs and the values are the user's email addresses.
+## Hard exercise: Given an array of objects representing users, like before, use reduce() to create an object where the keys are user IDs and the values are the user's email addresses.
 
-# Solution
+## Solution
 
 
 
@@ -279,9 +279,9 @@ console.log(userMap); // {1: "john@example.com", 2: "jane@other.com"}
 # Shift
 The shift() method in JavaScript is used to remove the first element from an array and returns that removed element. This method changes the length of the array.
 
-Easy exercise: Given an array [1, 2, 3, 4, 5], use the shift() method to remove the first element.
+## easy exercise: Given an array [1, 2, 3, 4, 5], use the shift() method to remove the first element.
 
-# Solution
+## Solution
 
 
 
@@ -293,9 +293,9 @@ let firstNumber = numbers.shift();
 
 console.log(firstNumber); // 1
 console.log(numbers); // [2, 3, 4, 5]
-Hard exercise: Implement a function removeFirstUser(users) that takes an array of user objects and removes the first user from the array. The function should return the removed user and the new array of users.
+## Hard exercise: Implement a function removeFirstUser(users) that takes an array of user objects and removes the first user from the array. The function should return the removed user and the new array of users.
 
-# Solution
+## Solution
 
 
 ```javascript
@@ -325,9 +325,9 @@ console.log(result.users); // Remaining users
 # Components
 Components are the building blocks of a React application. They are typically defined as functions that return a piece of  representing part of the user interface.
 
-Easy exercise: Create a simple Hello component that displays "Hello, World!".
+## easy exercise: Create a simple Hello component that displays "Hello, World!".
 
-# Solution
+## Solution
 
 
 ```
@@ -337,9 +337,9 @@ const Hello = () => <h1>Hello, World!</h1>;
 
 export default Hello;
 ```
-Hard exercise: Create a UserList component that receives an array of user objects via props and displays the name of each user in an unordered list.
+## Hard exercise: Create a UserList component that receives an array of user objects via props and displays the name of each user in an unordered list.
 
-# Solution
+## Solution
 
 ```
 
@@ -356,9 +356,9 @@ export default UserList;
 # Props
 Props (short for properties) in React allow components to talk to each other. A parent component can pass variables down to a child component via props.
 
-Easy exercise: Modify the Hello component from the first exercise to display the name received via props.
+## easy exercise: Modify the Hello component from the first exercise to display the name received via props.
 
-# Solution
+## Solution
 
 ```
 
@@ -368,9 +368,9 @@ const Hello = ({ name }) => <h1>Hello, {name}!</h1>;
 
 export default Hello;
 ```
-Hard exercise: Create a UserCard component that receives a user object via props and displays the user's name and email.
+## Hard exercise: Create a UserCard component that receives a user object via props and displays the user's name and email.
 
-# Solution
+## Solution
 
 
 ```
@@ -388,9 +388,9 @@ export default UserCard;
 # Forms in React
 Forms are essential parts of any interactive website. React provides a way to handle form's state in a neat way.
 
-Easy exercise: Create a simple form with an input field for the user's name and a submit button. When the form is submitted, it should alert the entered name.
+## easy exercise: Create a simple form with an input field for the user's name and a submit button. When the form is submitted, it should alert the entered name.
 
-# Solution
+## Solution
 
 ```
 
@@ -418,9 +418,9 @@ onChange={event => setName(event.target.value)}
 
 export default NameForm;
 ```
-Hard exercise: Expand on the previous form. Add fields for email and password, and validate the inputs before alerting the user's details (e.g., check that the name is not empty, the email looks like an email, and the password is at least 6 characters long).
+## Hard exercise: Expand on the previous form. Add fields for email and password, and validate the inputs before alerting the user's details (e.g., check that the name is not empty, the email looks like an email, and the password is at least 6 characters long).
 
-# Solution
+## Solution
 
 
 ```
@@ -478,9 +478,9 @@ Remember to always validate user input on the server side as well, as client-sid
 # Custom Hooks
 Custom Hooks are a mechanism to reuse stateful logic in React. Instead of using higher-order components or render props to share stateful logic, we can encapsulate it inside a reusable function.
 
-Easy exercise: Create a custom Hook useCounter that manages a simple counter state with increment and decrement functions.
+## easy exercise: Create a custom Hook useCounter that manages a simple counter state with increment and decrement functions.
 
-# Solution
+## Solution
 
 
 ```
@@ -497,9 +497,9 @@ return { count, increment, decrement };
 
 export default useCounter;
 ```
-Hard exercise: Create a custom Hook useFetch that accepts a URL and returns the response data, loading state, and any error occurred during the fetch operation.
+## Hard exercise: Create a custom Hook useFetch that accepts a URL and returns the response data, loading state, and any error occurred during the fetch operation.
 
-# Solution
+## Solution
 
 
 ```
@@ -534,9 +534,9 @@ export default useFetch;
 # Context API
 The React Context API provides a way to pass data through the component tree without having to pass props down manually at every level. It's designed to share data that can be considered "global" for a tree of React components.
 
-Easy exercise: Create a context to store the current user's information and a UserProvider component that wraps the entire application.
+## easy exercise: Create a context to store the current user's information and a UserProvider component that wraps the entire application.
 
-# Solution
+## Solution
 
 
 ```
@@ -554,9 +554,9 @@ return (
 );
 };
 ```
-Hard exercise: Use the context created in the previous exercise in a UserProfile component that displays the current user's name (if a user is logged in) or "Not logged in" otherwise.
+## Hard exercise: Use the context created in the previous exercise in a UserProfile component that displays the current user's name (if a user is logged in) or "Not logged in" otherwise.
 
-# Solution
+## Solution
 
 
 ```
@@ -578,9 +578,9 @@ export default UserProfile;
 # React Router
 React Router is a collection of navigational components that compose declaratively in your application. It allows you to handle routing in your React applications.
 
-Easy exercise: Set up a React Router with two routes: "/home" for a Home component and "/about" for an About component.
+## easy exercise: Set up a React Router with two routes: "/home" for a Home component and "/about" for an About component.
 
-# Solution
+## Solution
 
 
 ```
@@ -602,9 +602,9 @@ const App = () => (
 );
 ```
 export default App;
-Hard exercise: Expand on the previous exercise. Add a navigation bar with links to the Home and About pages, and ensure that the app defaults to the Home page when an unknown path is entered.
+## Hard exercise: Expand on the previous exercise. Add a navigation bar with links to the Home and About pages, and ensure that the app defaults to the Home page when an unknown path is entered.
 
-# Solution
+## Solution
 
 
 ```
