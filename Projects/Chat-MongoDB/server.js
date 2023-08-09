@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3000;
 
 const uri = 
-"mongodb+srv://danielawde9:CQ1ZoaPQAHrn3GDo@cluster0.x0d4wbq.mongodb.net/";
+"mongodb+srv://:@cluster0.x0d4wbq.mongodb.net/";
 
 global.client = new MongoClient(uri, {
   useNewUrlParser: true,
