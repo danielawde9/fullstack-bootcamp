@@ -72,30 +72,7 @@ function QuizManager() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {quizzes.map((quiz) => (
-              <TableRow key={quiz.id}>
-                <TableCell>{quiz.title}</TableCell>
-                <TableCell>{quiz.description}</TableCell>
-                <TableCell>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={() => handleEdit(quiz)}
-                  >
-                    Edit
-                  </Button>
-                </TableCell>
-                <TableCell>
-                  <Button
-                    variant="contained"
-                    color="secondary"
-                    onClick={() => handleDelete(quiz.id)}
-                  >
-                    Delete
-                  </Button>
-                </TableCell>
-              </TableRow>
-            ))}
+            // TODO here
           </TableBody>
         </Table>
       </TableContainer>
