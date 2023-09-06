@@ -5,6 +5,11 @@
     padding: 1rem;
 }
 
+h1{
+    font-size: 60px;
+    color: red;
+}
+
 .todo-input {
     width: 100%;
     padding: 0.5rem;
