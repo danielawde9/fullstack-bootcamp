@@ -15,11 +15,13 @@ import SignUpPage from "./Pages/SignUpPage";
 import Auth from "./Auth";
 
 function PrivateRoute({ children }) {
-  if (!Auth.isUserAuthenticated()) {
+  if (!Auth.isUserAuthenticated) {
+    // if user is NOT AUTHENTICATED
     return <Navigate to="/login" replace />;
   }
   return children;
 }
+
 function App() {
   return (
     <Router>

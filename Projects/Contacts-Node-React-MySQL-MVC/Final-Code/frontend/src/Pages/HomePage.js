@@ -7,6 +7,12 @@ import QuizManager from "../Components/QuizManager";
 const HomePage = () => {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    if (!Auth.isUserAuthenticated()) {
+      navigate("/login");
+    }
+  }, [navigate]);
+
   const handleLogout = () => {
     Auth.deAuthenticateUser();
     navigate("/login");

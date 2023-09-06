@@ -12,7 +12,6 @@ const NavBar = () => {
       navigate("/login");
       return;
     }
-
     if (
       (path === "/login" || path === "/signup") &&
       Auth.isUserAuthenticated()
@@ -20,7 +19,7 @@ const NavBar = () => {
       navigate("/home");
       return;
     }
-
+    // eza ana already bl login w i requested to go to login dont redirect me to login since im already there
     if (path !== location.pathname) {
       navigate(path);
     }
@@ -35,7 +34,11 @@ const NavBar = () => {
         <Button color="inherit" onClick={() => handleNavigation("/home")}>
           Home
         </Button>
-        <Button color="inherit" onClick={() => handleNavigation("/login")}>
+        <Button
+          style={{ display: Auth.isUserAuthenticated() ? "none" : "block" }}
+          color="inherit"
+          onClick={() => handleNavigation("/login")}
+        >
           Login
         </Button>
         <Button color="inherit" onClick={() => handleNavigation("/signup")}>

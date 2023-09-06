@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   TextField,
   Button,
@@ -10,19 +10,34 @@ import api from "../api";
 import Auth from "../Auth";
 import { useNavigate } from "react-router-dom";
 
-const LoginPage = () => {
+const SignUpPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  const handleLogin = async () => {
-    try {
-      const response = await api.post("/users/login", { username, password });
-      Auth.authenticateUser(response.data.token);
+  useEffect(() => {
+    if (Auth.isUserAuthenticated()) {
       navigate("/home");
+    }
+  }, [navigate]);
+
+  const handleSignUp = async () => {
+    if (!username || !password) {
+      setError("username and password must be filled out");
+      return;
+    }
+    try {
+      const response = await api.post("/users/signup", {
+        username,
+        password,
+      });
+      if (response.data.success) {
+        Auth.authenticateUser();
+        navigate("home");
+      }
     } catch (err) {
-      setError(err.response.data.message || "Login failed.");
+      setError(err.response.data.message);
     }
   };
 
@@ -37,13 +52,14 @@ const LoginPage = () => {
     >
       <Card style={{ width: "300px" }}>
         <CardContent>
-          <Typography variant="h5">Login</Typography>
+          <Typography variant="h5">Sign Up</Typography>
           {error && <div style={{ color: "red" }}>{error}</div>}
           <TextField
             label="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             fullWidth
+            required={true}
           />
           <br />
           <TextField
@@ -52,16 +68,17 @@ const LoginPage = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             fullWidth
+            required={true}
           />
           <br />
           <Button
             variant="contained"
             color="primary"
-            onClick={handleLogin}
+            onClick={handleSignUp}
             style={{ marginTop: "16px" }}
             fullWidth
           >
-            Login
+            Sign Up
           </Button>
         </CardContent>
       </Card>
@@ -69,4 +86,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default SignUpPage;

@@ -13,23 +13,20 @@ exports.signup = async (req, res) => {
     res.json({ success: true, message: "Registered successfully!" });
   } catch (error) {
     console.error("Registration Error:", error.message);
-    res
-      .status(500)
-      .json({ success: false, message: "Error registering user." });
+    res.status(400).json({ success: false, message: error.message });
   }
 };
 
 exports.login = async (req, res) => {
   const { username, password } = req.body;
-  const hashedPassword = bcrypt.hashSync(password);
   try {
     const [users] = await db.execute("select * from users where username = ?", [
       username,
     ]);
+
     const user = users[0];
 
     if (!user) return res.status(404).json({ message: "user not found" });
-
     const isPasswordValid = await bcrypt.compare(password, user.password);
 
     if (!isPasswordValid)
@@ -39,9 +36,9 @@ exports.login = async (req, res) => {
       expiresIn: 86400,
     });
 
-    res.status(200).json({ auth: true, token });
+    res.json({ success: true, token });
   } catch (error) {
     console.error("Login Error:", error.message);
-    res.status(500).json({ success: false, message: "Error logging in." });
+    res.status(500).json({ success: false, message: error.message });
   }
 };
