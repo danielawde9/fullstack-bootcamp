@@ -9,4 +9,4 @@
 ### Tasks:
 
 1. **Fetch All Data:** Implement an endpoint that, when triggered, retrieves all user entries.
-2. **Fetch Specific Data:** Consider a scenario where specific user details are required based on unique identifiers. Design a mechanism to achieve this.
+1. **Fetch Specific Data:** Consider a scenario where specific user details are required based on unique identifiers. Design a mechanism to achieve this.
