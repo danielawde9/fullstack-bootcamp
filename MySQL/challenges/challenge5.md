@@ -7,5 +7,5 @@ Stay in the schoolDB database.
 ## Tasks:
 
 Imagine you're building a digital library system. You need to store books, authors, and publishers.
-Sketch a brief design on paper or a digital tool, determining the entities and their relationships.
-Identify the types of data (e.g., text, dates, numbers) for each entity.
+Sketch a brief design on a digital tool, determining the entities and their relationships.
+Identify the types of data (e.g., text, dates, numbers) for each entity, also mention the primary key and secondary key in the tables.
