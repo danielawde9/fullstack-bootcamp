@@ -9,4 +9,4 @@
 ### Tasks:
 
 1. **Schema Design:** Before adding data, a schema must be defined. Consider what a User might entail and design a suitable Mongoose schema.
-2. **API Route for Creation:** Set up an API endpoint to facilitate user creation or sign-up processes. Understand the flow of data from the client's request to the database.
+2. **API Route for Creation:** Set up an API endpoint to facilitate for CRUD operation on mongo DB.
