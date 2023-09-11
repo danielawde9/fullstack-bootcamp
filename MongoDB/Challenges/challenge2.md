@@ -8,6 +8,6 @@
 
 ### Tasks:
 
-1. **Express Integration:** Modify app.js to integrate the Express framework. Learn about the required conventions and patterns.
-2. **Route Creation:** Design a primary route that responds with a message when accessed.
-3. **Server Activation:** Grasp the process of starting the Express server and accessing it via web tools.
+1. **Express Integration:** Modify app.js to integrate the Express framework.
+2. **Route Creation:** Design a primary route that responds with a message that shows when accessed using get method on /api.
+3. **Server Activation:** Start the server from the terminal and open the newly created server from the web.
