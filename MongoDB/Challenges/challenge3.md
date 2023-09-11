@@ -8,6 +8,7 @@
 - Ensure the mongoose package, a MongoDB object modeling tool, is installed in your project.
 
 ### Tasks:
-
-1. **Database Connection:** Use mongoose to initiate a connection to a MongoDB instance. Understand the necessary configurations and potential pitfalls.
-2. **Error Handling:** Implement mechanisms to detect and respond to connection errors. Recognize the significance of error handling in database connections.
+1. **Database Creation:** create databse and cluster in mongodb.com, make sure to select the free version and place it where ever you want, i prefer amazon bahrain since its the nearest to us.
+1. **Database Initialize:** Add user name and password to access this newly created db, make sure its just text no need for symbol and numebrs.
+1. **Database Connection:** Use mongoose to initiate a connection to a MongoDB instance. Understand the necessary configurations and potential pitfalls, make sure to add permission to yourself to be able to access the mongo, as shown in the image.
+1. **Error Handling:** Implement mechanisms to detect and respond to connection errors. Recognize the significance of error handling in database connections in case error in password or link for example.
