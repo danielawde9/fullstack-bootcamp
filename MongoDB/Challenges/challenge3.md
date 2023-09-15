@@ -5,7 +5,7 @@
 ### Setup:
 
 - Confirm MongoDB's installation and operational status.
-- Ensure the mongoose package, a MongoDB object modeling tool, is installed in your project.
+- Ensure the mongodb package, a MongoDB object modeling tool, is installed in your project.
 
 ### Tasks:
 1. **Database Creation:** create databse and cluster in mongodb.com, make sure to select the free version and place it where ever you want, i prefer amazon bahrain since its the nearest to us.
