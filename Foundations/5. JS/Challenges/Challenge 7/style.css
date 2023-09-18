@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(217, 217, 217, 0.8);
+}
+
+.login__container {
+  width: 35%;
+  height: 75%;
+  display: flex;
+  border: 5px solid black;
+  align-items: center;
+  padding: 2rem;
+}
+
+.login__signin {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__signin-now {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.login__signin-now h1 {
+  font-size: 3rem;
+}
+
+.login__signin-now h3 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.25rem;
+}
+
+.login__signin-now label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 0.5rem;
+}
+
+.login__signin-now input {
+  padding: 1rem;
+  border-radius: 1rem;
+  border-color: black;
+  font-size: 1.25rem;
+}
+
+.filled-btn {
+  margin-top: 1rem;
+  width: 10rem;
+  font-size: 1.05rem;
+  background-color: black;
+  border-color: black;
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.quotes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+blockquote {
+  margin: 50px auto 0;
+  padding: 15px;
+  background: linear-gradient(white, white) padding-box,
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/80625/sea.jpg) border-box 0 /
+      cover;
+  border: 40px solid transparent;
+  box-shadow: 5px 3px 30px black;
+  font: italic normal;
+  width: 40%;
+}
+
+.author {
+  padding-top: 15px;
+}
+
+cite {
+  font-weight: bold;
+}
