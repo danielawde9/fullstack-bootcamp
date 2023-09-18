@@ -13,15 +13,12 @@ In `app.js`, after setting up the MongoDB connection, add an endpoint to create 
 ```javascript
 app.use(express.json());
 
-app.post('/api/users', (req, res) => {
-    const user = { name: 'John Doe', email: 'john.doe@example.com', age: 25 };
-    const collection = client.db("<DB_NAME>").collection("users");
-    collection.insertOne(user, (err, result) => {
-        if (err) {
-            res.status(500).send('Failed to insert user.');
-            return;
-        }
-        res.status(200).send('User added successfully.');
-    });
+app.post("/api/users", (req, res) => {
+  const user = { name: "John Doe", email: "john.doe@example.com", age: 25 };
+  const collection = client.db("dbTest").collection("users");
+  collection.insertOne(user);
+  res.status(200).send("User added successfully.");
+
+  // else error
 });
 ```
