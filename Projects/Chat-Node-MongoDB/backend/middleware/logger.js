@@ -2,6 +2,7 @@
 
 // Middleware to log each request's URL and timestamp
 module.exports = (req, res, next) => {
-  console.log(`Logged ${req.url} at ${Date.now()}`);
-  next();
-};
+    console.log(`Logged ${req.method} ${req.url} at ${Date.now()}`);
+    next();
+  };
+  
