@@ -74,45 +74,58 @@ async function connectToMongo() {
 connectToMongo().catch(console.dir);
 
 app.post("/api/users", async (req, res) => {
+  const data = req.body;
   try {
-    const user = { name: "John Doe", email: "john.doe@example.com", age: 25 };
-    const collection = client.db("dbTest").collection("users");
-    await collection.insertOne(user);
-    res.status(200).send("User added successfully.");
+    const collection = client.db("chatDB").collection("users");
+    const result = await collection.insertOne(data);
+    res.send(result);
   } catch (err) {
-    console.error(err); // log the actual error for better debugging
-    res.status(500).send("Failed to insert user.");
+    console.log(err);
   }
 });
 
 app.get("/api/users", async (req, res) => {
   try {
-    const collection = client.db("dbTest").collection("users");
-    const users = await collection.find({}).toArray();
-    res.status(200).json(users);
+    const collection = client.db("chatDB").collection("users");
+    const result = await collection.find({}).toArray();
+    res.send(result);
   } catch (err) {
-    console.error(err);
-    res.status(500).send("Failed to fetch users.");
+    console.log(err);
   }
 });
 
-const ObjectId = require("mongodb").ObjectId;
+const ObjectID = require("mongodb").ObjectId;
 
 app.get("/api/users/:id", async (req, res) => {
+  const userID = req.params.id;
   try {
-    const userId = req.params.id;
-    const collection = client.db("dbTest").collection("users");
-    const user = await collection.findOne({ _id: new ObjectId(userId) });
-
-    if (!user) {
-      res.status(404).send("User not found.");
-      return;
-    }
-
-    res.status(200).json(user);
+    const collection = client.db("chatDB").collection("users");
+    const result = await collection.findOne({ _id: new ObjectID(userID) });
+    res.send(result);
   } catch (err) {
-    console.error(err);
-    res.status(500).send("Failed to fetch user.");
+    console.log(err);
+  }
+});
+
+app.delete("/api/users/:id", async (req, res) => {
+  const userID = req.params.id;
+  try {
+    const collection = client.db("chatDB").collection("users");
+    const result = await collection.deleteOne({ _id: new ObjectID(userID) });
+    res.send(result);
+  } catch (err) {
+    console.log(err);
+  }
+});
+
+app.put("/api/users/:id", async (req, res) => {
+  const userID = req.params.id;
+  try {
+    const collection = client.db("chatDB").collection("users");
+    const result = await collection.updateOne({ _id: new ObjectID(userID) }, { $set: updatedData });
+    res.send(result);
+  } catch (err) {
+    console.log(err);
   }
 });
 
